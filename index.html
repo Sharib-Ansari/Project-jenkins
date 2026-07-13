@@ -1,82 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Sharib Ansari | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/6b6a4d4f7d.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
+<div class="cursor"></div>
+
+<!--================ NAVBAR ================-->
+
+<header>
+
 <nav>
 
-    <h2>Sharib.</h2>
+<div class="logo">
 
-    <ul>
+Sharib<span>.</span>
 
-        <li><a href="#home">Home</a></li>
+</div>
 
-        <li><a href="#about">About</a></li>
+<ul class="nav-links">
 
-        <li><a href="#skills">Skills</a></li>
+<li><a href="#home">Home</a></li>
 
-        <li><a href="#projects">Projects</a></li>
+<li><a href="#about">About</a></li>
 
-        <li><a href="#contact">Contact</a></li>
+<li><a href="#skills">Skills</a></li>
 
-    </ul>
+<li><a href="#journey">Journey</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="menu">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
 
 </nav>
 
+</header>
+
+<!--================ HERO SECTION ================-->
+
 <section class="hero" id="home">
 
-<div>
+<div class="hero-left">
 
-<h1>Hello 👋<br>I'm <span>Sharib Ansari</span></h1>
+<p class="welcome">
 
-<p>
-
-MCA Student | Full Stack Developer | AWS & DevOps Learner
+HELLO 👋 I'M
 
 </p>
 
-<button onclick="scrollToSection()">Explore More</button>
+<h1>
+
+Sharib <br>
+
+<span>Ansari</span>
+
+</h1>
+
+<h3>
+
+<span id="typing"></span>
+
+</h3>
+
+<p class="hero-text">
+
+An MCA student passionate about Full Stack Development,
+
+Cloud Computing, Linux, AWS and DevOps.
+
+I enjoy building modern web applications while continuously learning
+
+new technologies.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn">
+
+View Projects
+
+</a>
+
+<a href="#contact" class="btn btn-outline">
+
+Contact Me
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="circle"></div>
+
+<div class="profile-card">
+
+<i class="fa-solid fa-code"></i>
+
+<h2>
+
+Full Stack Developer
+
+</h2>
+
+<p>
+
+Building the future with code.
+
+</p>
+
+</div>
 
 </div>
 
 </section>
 
-<section id="about">
+<!--================ ABOUT ================-->
 
-<h2>About Me</h2>
+<section class="about" id="about">
+
+<h2 class="section-title">
+
+About Me
+
+</h2>
+
+<div class="about-container">
+
+<div class="about-image">
+
+<i class="fa-solid fa-user"></i>
+
+</div>
+
+<div class="about-content">
+
+<h3>
+
+Who Am I?
+
+</h3>
 
 <p>
 
-I am currently pursuing MCA with a specialization in Full Stack Development.
-I enjoy building web applications and continuously improving my skills in Java,
-JavaScript, AWS Cloud, Linux, DevOps and modern web technologies.
+Hi! I'm <strong>Sharib Ansari</strong>, currently pursuing my Master of Computer Applications (MCA)
 
-My goal is to become a skilled Full Stack & Cloud Engineer capable of designing,
-building and deploying scalable applications.
+with a specialization in Full Stack Development.
+
+I have a strong interest in web development, cloud computing and DevOps.
 
 </p>
 
+<p>
+
+I enjoy creating responsive websites, exploring AWS services,
+
+working with Linux systems and learning modern technologies like
+
+Git, GitHub, Jenkins and Docker.
+
+</p>
+
+<p>
+
+My long-term goal is to become a skilled Full Stack & Cloud Engineer
+
+who can design, develop and deploy scalable applications.
+
+</p>
+
+</div>
+
+</div>
+
 </section>
 
-<section id="skills">
+<!--================ SKILLS ================-->
 
-<h2>Skills</h2>
+<section class="skills" id="skills">
 
-<div class="cards">
+<h2 class="section-title">
 
-<div class="card">
+Technical Skills
+
+</h2>
+
+<div class="skill-container">
+
+<div class="skill-card">
 
 <i class="fa-brands fa-html5"></i>
 
@@ -84,7 +225,7 @@ building and deploying scalable applications.
 
 </div>
 
-<div class="card">
+<div class="skill-card">
 
 <i class="fa-brands fa-css3-alt"></i>
 
@@ -92,7 +233,7 @@ building and deploying scalable applications.
 
 </div>
 
-<div class="card">
+<div class="skill-card">
 
 <i class="fa-brands fa-js"></i>
 
@@ -100,7 +241,7 @@ building and deploying scalable applications.
 
 </div>
 
-<div class="card">
+<div class="skill-card">
 
 <i class="fa-brands fa-java"></i>
 
@@ -108,15 +249,23 @@ building and deploying scalable applications.
 
 </div>
 
-<div class="card">
+<div class="skill-card">
 
-<i class="fa-brands fa-aws"></i>
+<i class="fa-brands fa-git-alt"></i>
 
-<h3>AWS</h3>
+<h3>Git</h3>
 
 </div>
 
-<div class="card">
+<div class="skill-card">
+
+<i class="fa-brands fa-github"></i>
+
+<h3>GitHub</h3>
+
+</div>
+
+<div class="skill-card">
 
 <i class="fa-brands fa-linux"></i>
 
@@ -124,35 +273,101 @@ building and deploying scalable applications.
 
 </div>
 
+<div class="skill-card">
+
+<i class="fa-brands fa-aws"></i>
+
+<h3>AWS</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-solid fa-server"></i>
+
+<h3>Apache</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-solid fa-gears"></i>
+
+<h3>Jenkins</h3>
+
+</div>
+
 </div>
 
 </section>
 
-<section id="projects">
+<!--================ JOURNEY ================-->
 
-<h2>Projects</h2>
+<section class="journey" id="journey">
 
-<div class="cards">
+<h2 class="section-title">
 
-<div class="card">
+Learning Journey
 
-<h3>Amazon Clone</h3>
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>MCA Student</h3>
 
 <p>
 
-Responsive shopping website built using HTML, CSS and JavaScript.
+Currently pursuing MCA with specialization in Full Stack Development.
 
 </p>
 
 </div>
 
-<div class="card">
+<div class="timeline-item">
 
-<h3>AWS Portfolio Hosting</h3>
+<h3>Frontend Development</h3>
 
 <p>
 
-Hosted static websites using EC2, Apache Server and Linux.
+Building projects using HTML, CSS and JavaScript.
+
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Java & DSA</h3>
+
+<p>
+
+Improving problem-solving skills and mastering Java programming.
+
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>AWS & Linux</h3>
+
+<p>
+
+Learning EC2, IAM, S3, VPC, CloudWatch, Linux administration and Apache.
+
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Currently Learning</h3>
+
+<p>
+
+Jenkins • Docker • DevOps
 
 </p>
 
@@ -162,23 +377,160 @@ Hosted static websites using EC2, Apache Server and Linux.
 
 </section>
 
-<section id="contact">
+<!--================ PROJECTS ================-->
 
-<h2>Contact</h2>
+<section class="projects" id="projects">
 
-<p>Email : ansarisharib8445@gmail.com</p>
+<h2 class="section-title">
 
-<p>Location : Haridwar, Uttarakhand</p>
+Projects
+
+</h2>
+
+<div class="project-container">
+
+<div class="project-card">
+
+<h3>
+
+Amazon Clone
+
+</h3>
+
+<p>
+
+A responsive e-commerce website built using HTML, CSS and JavaScript.
+
+</p>
+
+<a href="#">
+
+Coming Soon →
+
+</a>
+
+</div>
+
+<div class="project-card">
+
+<h3>
+
+AWS Portfolio Hosting
+
+</h3>
+
+<p>
+
+Hosted static websites on Amazon EC2 using Apache Web Server and Linux.
+
+</p>
+
+<a href="#">
+
+Coming Soon →
+
+</a>
+
+</div>
+
+<div class="project-card">
+
+<h3>
+
+Jenkins CI/CD
+
+</h3>
+
+<p>
+
+Automated website deployment using GitHub, Jenkins and Apache.
+
+</p>
+
+<a href="#">
+
+Coming Soon →
+
+</a>
+
+</div>
+
+</div>
 
 </section>
+
+<!--================ CONTACT ================-->
+
+<section class="contact" id="contact">
+
+<h2 class="section-title">
+
+Let's Connect
+
+</h2>
+
+<div class="contact-box">
+
+<div class="contact-item">
+
+<i class="fa-solid fa-envelope"></i>
+
+<p>
+
+ansarisharib8445@gmail.com
+
+</p>
+
+</div>
+
+<div class="contact-item">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<p>
+
+Haridwar, Uttarakhand, India
+
+</p>
+
+</div>
+
+<div class="contact-item">
+
+<i class="fa-brands fa-github"></i>
+
+<p>
+
+github.com/Sharib-Ansari
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ FOOTER ================-->
 
 <footer>
 
-Made with ❤️ by Sharib Ansari
+<p>
+
+© 2026 Sharib Ansari
+
+</p>
+
+<p>
+
+Designed & Developed with ❤️ using HTML, CSS & JavaScript by Sharib Ansari
+
+</p>
 
 </footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
